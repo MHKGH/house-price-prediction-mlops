@@ -15,7 +15,7 @@ spec:
       containers:
       - name: house-api
         image: house-predictor:v1
-        imagePullPolicy: Never  # <--- Crucial! Tells K8s to use the local image we just loaded
+        imagePullPolicy: Never  # Tells K8s to use the local image we just loaded
         ports:
         - containerPort: 8000
 
